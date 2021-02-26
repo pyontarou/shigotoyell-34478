@@ -18,7 +18,6 @@
 | last_name_kana     | string     | null: false                    |
 | first_name_kana    | string     | null: false                    |
 | birth_day          | date       | null: false                    |
-| like               | references | null: false, foreign_key: true | 
 ### Association
 
 - has_many :jobs
@@ -29,23 +28,22 @@
 
 ## companies テーブル
 
-| Column              | Type       | Options                        |
-| ------------------- | ---------- | ------------------------------ |
-| encrypted_password  | string     | null: false                    |
-| email               | string     | null: false, unique:true       |
-| business_content_id | integer    | null: false                    |
-| company_name        | string     | null: false                    |
-| company_name_kana   | string     | null: false                    |
-| representative_name | string     | null: false                    |
-| foundation_date     | date       | null: false                    |
-| employee_number     | string     | null: false                    |
-| prefecture_code     | string     | null: false                    |
-| prefectures_id      | integer    | null: false                    |
-| city                | string     | null: false                    |
-| address             | string     | null: false                    |
-| building_name       | string     | null: false                    |
-| phone_number        | string     | null: false                    |
-| job                 | references | null: false, foreign_key: true |
+| Column                   | Type       | Options                        |
+| ------------------------ | ---------- | ------------------------------ |
+| encrypted_password       | string     | null: false                    |
+| email                    | string     | null: false, unique:true       |
+| business_content_id      | integer    | null: false                    |
+| company_name             | string     | null: false                    |
+| representative_name      | string     | null: false                    |
+| representative_name_kana | string     | null: false                    |
+| foundation_date          | date       | null: false                    |
+| employee_number          | string     | null: false                    |
+| prefecture_code          | string     | null: false                    |
+| prefectures_id           | integer    | null: false                    |
+| city                     | string     | null: false                    |
+| address                  | string     | null: false                    |
+| building_name            | string     | null: false                    |
+| phone_number             | string     | null: false                    |
 
 ### Association
 
