@@ -1,4 +1,5 @@
 Rails.application.routes.draw do 
+  get 'users/index'
   devise_for :companies, controllers: {
     sessions: 'companies/sessions',
     passwords: 'companies/passwords',
@@ -11,7 +12,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   root to: "jobs#index"
-  resources :companise
-  resources :user
+  resources :users, only: [:index]
+  resources :companies, only: [:index]
   
 end
