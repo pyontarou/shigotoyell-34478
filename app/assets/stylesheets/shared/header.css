@@ -4,19 +4,18 @@
 
 .top-page-header {
   width: 100vw;
-  padding: 2vh 15vw;
-  display: flex;
-  flex-direction: column;
-}
-
-.search-bar-contents {
+  padding: 0.5vh 10vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.furima-icon {
-  width: 10vw;
+.search-bar-contents {
+  display: flex;
+}
+
+.logo-icon {
+  width: 17vw;
   margin-right: 10vw;
 }
 
@@ -48,10 +47,10 @@
 .nav {
   font-size: 18px;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   flex-wrap: wrap;
   width: 100%;
-  padding: 1vh 0;
+  padding: 0.1vh 0;
 }
 
 .lists-left {
@@ -66,16 +65,17 @@
   color: #333333;
 }
 
-.brand-list {
-  text-decoration: none;
+.users-list {
+  font-weight: bold;
   color: #333333;
 }
 
-.lists-right {
+.lists-users {
   display: flex;
   list-style: none;
   align-items: flex-end;
 }
+
 
 
 .user-nickname {
